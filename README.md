@@ -1,9 +1,9 @@
-# 🐳 caddy-cloudflare
+# 🐳 caddy-proxy-cloudflare
 
-[![DockerHub](https://img.shields.io/badge/DockerHub-iarekylew00t%2Fcaddy--cloudflare-blue?style=flat)](https://hub.docker.com/r/iarekylew00t/caddy-cloudflare)
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/IAreKyleW00t/docker-caddy-cloudflare?label=Latest%20Version)](https://github.com/IAreKyleW00t/docker-caddy-cloudflare/tags)
-[![Docker Build & Release](https://github.com/IAreKyleW00t/docker-caddy-cloudflare/actions/workflows/docker.yml/badge.svg)](https://github.com/IAreKyleW00t/docker-caddy-cloudflare/actions/workflows/docker.yml)
-[![License](https://img.shields.io/github/license/IAreKyleW00t/docker-caddy-cloudflare)](https://github.com/IAreKyleW00t/docker-caddy-cloudflare/blob/main/LICENSE)
+[![DockerHub](https://img.shields.io/badge/DockerHub-stevenh512%2Fcaddy--cloudflare-blue?style=flat)](https://hub.docker.com/r/stevenh512/caddy-proxy-cloudflare)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/stevenh512/docker-caddy-proxy-cloudflare?label=Latest%20Version)](https://github.com/stevenh512/docker-caddy-proxy-cloudflare/tags)
+[![Docker Build & Release](https://github.com/stevenh512/docker-caddy-proxy-cloudflare/actions/workflows/docker.yml/badge.svg)](https://github.com/stevenh512/docker-caddy-proxy-cloudflare/actions/workflows/docker.yml)
+[![License](https://img.shields.io/github/license/stevenh512/docker-caddy-proxy-cloudflare)](https://github.com/stevenh512/docker-caddy-proxy-cloudflare/blob/main/LICENSE)
 [![Dependabot](https://img.shields.io/badge/Dependabot-0366d6?style=flat&logo=dependabot&logoColor=white)](.github/dependabot.yml)
 
 The [Caddy](https://hub.docker.com/_/caddy) Docker image with the added
@@ -17,27 +17,27 @@ Built for the same platforms as the upstream Caddy project (except Windows, sorr
 
 ```sh
 # Docker Hub
-docker pull iarekylew00t/caddy-cloudflare:latest
+docker pull stevenh512/caddy-proxy-cloudflare:latest
 
 # GHCR
-docker pull ghcr.io/iarekylew00t/caddy-cloudflare:latest
+docker pull ghcr.io/stevenh512/caddy-proxy-cloudflare:latest
 ```
 
 ## Tags
 
 The following tags are the latest available for the
-`iarekylew00t/caddy-cloudflare` image.
+`stevenh512/caddy-proxy-cloudflare` image.
 
 <!--START-TAGS-->
 
-- [`latest`](https://github.com/IAreKyleW00t/docker-caddy-cloudflare/tree/v2.8.4)
-- [`2.8.4`](https://github.com/IAreKyleW00t/docker-caddy-cloudflare/tree/v2.8.4)
-- [`2.8`](https://github.com/IAreKyleW00t/docker-caddy-cloudflare/tree/v2.8)
-- [`2`](https://github.com/IAreKyleW00t/docker-caddy-cloudflare/tree/v2)
+- [`latest`](https://github.com/stevenh512/docker-caddy-proxy-cloudflare/tree/v2.8.4)
+- [`2.8.4`](https://github.com/stevenh512/docker-caddy-proxy-cloudflare/tree/v2.8.4)
+- [`2.8`](https://github.com/stevenh512/docker-caddy-proxy-cloudflare/tree/v2.8)
+- [`2`](https://github.com/stevenh512/docker-caddy-proxy-cloudflare/tree/v2)
 <!--END-TAGS-->
 
 Check the GitHub
-[Tags](https://github.com/IAreKyleW00t/docker-caddy-cloudflare/tags)
+[Tags](https://github.com/stevenh512/docker-caddy-proxy-cloudflare/tags)
 for a list of all versions!
 
 ## Usage
@@ -66,7 +66,7 @@ docker run --rm -it \
   -v caddy_config:/config \
   -v $PWD/Caddyfile:/etc/caddy/Caddyfile \
   -e CF_API_TOKEN=UhKLc...JD9jk \
-  iarekylew00t/caddy-cloudflare:latest
+  stevenh512/caddy-proxy-cloudflare:latest
 ```
 
 If you prefer `docker-compose` you can use the provided
@@ -125,7 +125,7 @@ You can generate a Cloudflare API token via the Cloudflare web console using the
 You can easily build the Docker image locally by doing
 
 ```sh
-docker build -t caddy-cloudflare .
+docker build -t caddy-proxy-cloudflare .
 ```
 
 If you prefer `docker-compose` you can use the provided
@@ -145,16 +145,16 @@ following command to verify the integrity of these images yourself.
 ```sh
 cosign verify \
   --certificate-oidc-issuer https://token.actions.githubusercontent.com \
-  --certificate-identity-regexp https://github.com/IAreKyleW00t/docker-caddy-cloudflare/.github/workflows/ \
-  iarekylew00t/caddy-cloudflare:latest
+  --certificate-identity-regexp https://github.com/stevenh512/docker-caddy-proxy-cloudflare/.github/workflows/ \
+  stevenh512/caddy-proxy-cloudflare:latest
 ```
 
 ## Contributing
 
 Feel free to contribute and make things better by opening an
-[Issue](https://github.com/IAreKyleW00t/docker-caddy-cloudflare/issues) or
-[Pull Request](https://github.com/IAreKyleW00t/docker-caddy-cloudflare/pulls).
+[Issue](https://github.com/stevenh512/docker-caddy-proxy-cloudflare/issues) or
+[Pull Request](https://github.com/stevenh512/docker-caddy-proxy-cloudflare/pulls).
 
 ## License
 
-See [LICENSE](https://github.com/IAreKyleW00t/docker-caddy-cloudflare/blob/main/LICENSE).
+See [LICENSE](https://github.com/stevenh512/docker-caddy-proxy-cloudflare/blob/main/LICENSE).
