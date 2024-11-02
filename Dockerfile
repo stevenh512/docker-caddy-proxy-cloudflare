@@ -1,6 +1,7 @@
 # syntax=docker/dockerfile:1
 FROM caddy:2.8.4-builder AS builder
 RUN xcaddy build \
+  --with github.com/lucaslorentz/caddy-docker-proxy \
   --with github.com/caddy-dns/cloudflare
 
 FROM caddy:2.8.4 AS caddy
